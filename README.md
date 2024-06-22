@@ -3,7 +3,7 @@
 <div align="center">
 
 *A simple version of UNIX Shell developed using Python and Pytest with awesome open-source technologies*  
-[Overview](#overview) • [Preview](#preview) • [Demo](#demo) • [Shell Commands](#shell-commands) • [Technologies](#technologies) • [File Structure](#file-structure) • [Usage](#usage) • [Tests](#tests) • [License](#license)
+[Overview](#overview) • [Preview](#preview) • [Demo](#demo) • [Shell Commands](#shell-commands) • [Technologies](#technologies) • [File Structure](#file-structure) • [Setup](#setup) • [Tests](#tests) • [License](#license)
 
 </div>
 
@@ -76,8 +76,8 @@ This project is structured to facilitate the development and testing of various 
 - `tests/` directory: Contains unit tests for the modules in the `src` directory
 - `.github/` directory: Contains files and directories that customize and enhance the *GitHub* repository's functionality and appearance
 
-## Usage
-After cloning this repository, you should following this step-by-step instructions to setup the development environment and run the application locally on your machine.
+## Setup
+After cloning this repository, you should following this step-by-step instructions to setup the production environment and run the application locally on your machine.
 
 ### I. Prerequisites
 1. You need an UNIX-like environment to run this project (e.g. Linux, macOS, or Windows Subsystem for Linux (WSL)).
@@ -102,7 +102,7 @@ After cloning this repository, you should following this step-by-step instructio
 
 1. Create a virtual environment.
     ```sh
-    python3.10 -m .venv .venv
+    python3.10 -m venv .venv
     ```
 
 1. Activate the virtual environment.
@@ -153,6 +153,11 @@ This project uses [Pytest](https://github.com/pytest-dev/pytest) for unit testin
 1. Run Pytest with basic verbosity on details.
     ```sh
     pytest -v
+    ```
+
+1. After the tests finished, deactivate the virtual environment.
+    ```sh
+    deactivate
     ```
 
 ## License
