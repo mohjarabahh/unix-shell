@@ -8,7 +8,7 @@
 </div>
 
 ## Overview
-A simple version of UNIX Shell developed using Python language and Pytest testing framework under the Linux environment with several awesome [open-source technologies](#technologies). The shell can handle both [built-in commands](#shell-commands) and executable files. It is not sophisticated as *Bash* or *Zsh*, but it performs similar functions.
+A simple version of UNIX Shell developed using Python programming language and Pytest framework, under a Linux environment, with several awesome [open-source technologies](#technologies). The shell can handle both [built-in commands](#shell-commands) and executable files. It is not sophisticated as *Bash* or *Zsh*, but it performs similar functions.
 
 The codebase is pretty organized, easier to maintain, and scalable as the project grows (if that happened) due to the clean file structure, clean code, and great documentation. This has been be done with modularity, best practices, documentation, documentation strings, type hinting, and unit testing, which made the codebase easier to debug and maintain, as well as, ensured code correctness.
 
@@ -30,7 +30,7 @@ The codebase is pretty organized, easier to maintain, and scalable as the projec
 | `date` | Displays the current date. |
 | `time` | Displays the current time. |
 | `ps` | Displays information about currently running processes. |
-| `echo` | Prints text or variables to the terminal |
+| `echo` | Prints text or variables to the terminal. |
 | `pid` | Displays the shell Process ID (PID). |
 | `ppid` | Displays the shell Parent Process ID (PPID). |
 | `info` | Provides the project documentation. |
@@ -80,9 +80,7 @@ This project is structured to facilitate the development and testing of various 
 After cloning this repository, you should following this step-by-step instructions to setup the production environment and run the application locally on your machine.
 
 ### I. Prerequisites
-1. You need an UNIX-like environment to run this project (e.g. Linux, macOS, or Windows Subsystem for Linux (WSL)).
-
-1. Update and upgrade packages (for Debian/Ubuntu users).
+1. Update and upgrade packages.
     ```sh
     sudo apt update && sudo apt upgrade -y
     ```
@@ -92,7 +90,7 @@ After cloning this repository, you should following this step-by-step instructio
     sudo apt install python3.10
     ```
 
-1. If you are Debian/Ubuntu user, you need to install `python3.10-venv` package.
+1. Install `python3.10-venv` package.
     ```sh
     sudo apt install python3.10-venv
     ```
@@ -121,7 +119,7 @@ After cloning this repository, you should following this step-by-step instructio
     chmod +x app.py
     ```
 
-1. Run the shell application (`.venv` must be activated).
+1. Run the shell application.
     ```sh
     ./app.py
     ```
