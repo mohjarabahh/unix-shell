@@ -2,18 +2,18 @@
 
 from os import getpid as get_pid
 from os import getppid as get_ppid
-from src.change_current_directory import change_current_directory
-from src.command_not_found import command_not_found
-from src.current_date import current_date
-from src.current_time import current_time
-from src.execute_shell_command import execute_shell_command
-from src.exit import exit
-from src.help import help
-from src.info import info
-from src.is_executable_file import is_executable_file
-from src.split_command_line import split_command_line
-from src.user_prompt import user_prompt
-from src.welcome import welcome
+from utils.change_current_directory import change_current_directory
+from utils.command_not_found import command_not_found
+from utils.current_date import current_date
+from utils.current_time import current_time
+from utils.execute_shell_command import execute_shell_command
+from utils.exit import exit
+from utils.help import help
+from utils.info import info
+from utils.is_executable_file import is_executable_file
+from utils.split_command_line import split_command_line
+from utils.user_prompt import user_prompt
+from utils.welcome import welcome
 
 def app():
     """The main function which serves as the entry point of the shell application."""

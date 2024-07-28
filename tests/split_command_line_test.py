@@ -1,4 +1,4 @@
-from src.split_command_line import split_command_line
+from utils.split_command_line import split_command_line
 
 def test_split_command_line():
     assert split_command_line("ls ./src -al") == { "command": "ls", "arguments": ["./src", "-al"] }

@@ -1,5 +1,5 @@
 from termcolor import colored as color_string
-from src.shell_banner import shell_banner
+from utils.shell_banner import shell_banner
 
 def welcome() -> str:
     """

@@ -37,7 +37,7 @@ The codebase is pretty organized, easier to maintain, and scalable as the projec
 | `help` | Provides information and help about shell commands. |
 | `exit` | Terminates the current shell session. |
 | Executable Files | Executes executable files located in the current directory (`./`) or the parent directory (`../`). |
-<!-- information of commands and their description are sourced from `/src/help.py` file manually -->
+<!-- information of commands and their description are sourced from `/utils/help.py` file manually -->
 
 ## Technologies
 - [Python 3.10](https://github.com/python/cpython)
@@ -58,7 +58,7 @@ This project is structured to facilitate the development and testing of various 
 ├── LICENSE
 ├── README.md
 ├── .gitignore
-├── src/
+├── utils/
 ├── tests/
 └── .github/
 ```
@@ -72,8 +72,8 @@ This project is structured to facilitate the development and testing of various 
 - `.gitignore` file: Specifies intentionally untracked files that *Git* should ignore
 
 ### Directories Detailed Breakdown
-- `src/` directory: Contains the implementation of various utilities
-- `tests/` directory: Contains unit tests for the modules in the `src` directory
+- `utils/` directory: Contains the implementation of various utilities
+- `tests/` directory: Contains unit tests for the modules in the `utils` directory
 - `.github/` directory: Contains files and directories that customize and enhance the *GitHub* repository's functionality and appearance
 
 ## Setup

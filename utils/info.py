@@ -1,6 +1,6 @@
 from termcolor import colored as color_string
-from src.shell_banner import shell_banner
-from src.help import help
+from utils.shell_banner import shell_banner
+from utils.help import help
 
 def info() -> str:
     """
