@@ -11,7 +11,7 @@ from utils.exit import exit
 from utils.help import help
 from utils.info import info
 from utils.is_executable_file import is_executable_file
-from utils.split_command_line import split_command_line
+from utils.parse_command_line import parse_command_line
 from utils.user_prompt import user_prompt
 from utils.welcome import welcome
 
@@ -23,7 +23,7 @@ def app():
     while True:
         # output `user prompt`, read `command line`, and convert `command line` to python dictionary
         command_line: str = input(user_prompt()).strip()
-        command_line_components: dict[str, list[str]] = split_command_line(command_line)
+        command_line_components: dict = parse_command_line(command_line)
         command_name: str = command_line_components["command"]
         command_arguments: str = " ".join(command_line_components["arguments"])
 
