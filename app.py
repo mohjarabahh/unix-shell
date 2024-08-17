@@ -7,18 +7,18 @@ from utils.command_not_found import command_not_found
 from utils.current_date import current_date
 from utils.current_time import current_time
 from utils.execute_shell_command import execute_shell_command
-from utils.exit import exit
-from utils.help import help
-from utils.info import info
+from utils.shell_exit import shell_exit
+from utils.shell_help import shell_help
+from utils.shell_info import shell_info
 from utils.is_executable_file import is_executable_file
 from utils.parse_command_line import parse_command_line
 from utils.user_prompt import user_prompt
-from utils.welcome import welcome
+from utils.shell_welcome import shell_welcome
 
 def app():
     """The main function which serves as the entry point of the shell application."""
 
-    print(welcome())
+    print(shell_welcome())
 
     while True:
         # output `user prompt`, read `command line`, and convert `command line` to python dictionary
@@ -78,15 +78,15 @@ def app():
 
         # - `info` builtin command
         elif "info" == command_name:
-            print(info())
+            print(shell_info())
 
         # - `help` builtin command
         elif "help" == command_name:
-            print(help())
+            print(shell_help())
 
         # - `exit` builtin command
         elif "exit" == command_name:
-            print(exit())
+            print(shell_exit())
             break
 
         # - empty command
@@ -101,4 +101,5 @@ def app():
         else:
             print(command_not_found(command_name))
 
-app()
+if __name__ == "__main__":
+    app()
