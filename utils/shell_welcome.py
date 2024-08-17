@@ -1,7 +1,7 @@
 from termcolor import colored as color_string
 from utils.shell_banner import shell_banner
 
-def welcome() -> str:
+def shell_welcome() -> str:
     """
     Displays the shell welcome message with an awesome text banner, and a note for `help` command.
     """
