@@ -9,5 +9,4 @@ def current_time() -> str:
     "1:37 AM"
     """
 
-    current_time = datetime.now().strftime(r"%-I:%M %p")
-    return current_time
+    return datetime.now().strftime(r"%-I:%M %p")

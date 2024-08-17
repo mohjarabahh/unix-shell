@@ -9,5 +9,4 @@ def current_date() -> str:
     "Saturday, June 15, 2024"
     """
 
-    current_date = datetime.now().strftime(r"%A, %B %-d, %Y")
-    return current_date
+    return datetime.now().strftime(r"%A, %B %-d, %Y")

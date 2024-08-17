@@ -3,7 +3,8 @@ from os.path import exists as is_directory_exists
 
 def change_current_directory(directory_path: str) -> None:
     """
-    Changes the current working directory of the shell. Displays error message if directory path does not exist!
+    Changes the current working directory of the shell.
+    Displays error message if directory path does not exist!
 
     Example:
     >>> change_current_directory("non/exist/directory")

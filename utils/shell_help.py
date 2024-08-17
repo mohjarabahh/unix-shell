@@ -1,6 +1,6 @@
 from terminaltables import SingleTable as create_table
 
-def help() -> str:
+def shell_help() -> str:
     """
     Displays a help message for a `help` command, which provides an information and help about shell commands.
     """
