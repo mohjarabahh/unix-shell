@@ -41,6 +41,7 @@ The codebase is pretty organized, easier to maintain, and scalable as the projec
 
 ## Technologies
 - [Python 3.10](https://github.com/python/cpython)
+- [PIP 22.0](https://pypi.org/project/pip)
 - [PyTest 8.2](https://github.com/pytest-dev/pytest)
 - [TermColor 2.4](https://github.com/termcolor/termcolor)
 - [PyFIGlet 1.0](https://github.com/pwaller/pyfiglet)
