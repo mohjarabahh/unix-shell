@@ -1,4 +1,4 @@
-# dependencies needed for development, such as testing frameworks and linters
+# dependencies that are used during development (additional tools), such as testing frameworks and linters
 
 -r requirements.txt # ensures that all the dependencies listed in `requirements.txt` are included when installing the development dependencies
 

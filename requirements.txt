@@ -1,4 +1,4 @@
-# dependencies needed for the application to run in production
+# dependencies for running a project in production
 
 termcolor==2.4.0
 pyfiglet==1.0.2
